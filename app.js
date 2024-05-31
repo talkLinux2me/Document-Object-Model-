@@ -20,9 +20,9 @@ document.addEventListener("click", myFunction1);
 document.addEventListener("click", myFunction2);
 
 function myFunction1() {
-  document.getElementById("interactivewalk").innerHTML += "It's a beautiful day for a walk. "
+    window.alert("It's a beautiful day for a walk. ")
 }
 function myFunction2() {
-    document.getElementById("interactivewalk").innerHTML += "This could be you! "
+    window.alert("This could be you! ")
   }
   
