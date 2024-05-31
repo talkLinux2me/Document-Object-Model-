@@ -1,3 +1,28 @@
-const friend = document.getElementById("bringafriend")
-const main = document.querySelector("body")
-const trail = document.getElementById("routes")
+const friend = document.querySelectorAll("section");
+
+const newel = document.getElementById("bringAfriend")
+newel.style.backgroundColor = "lavender";
+
+const mainEl = document.querySelector("body");
+
+mainEl.style.fontFamily = "helvetica"; 
+mainEl.style.textAlign = "center"
+mainEl.style.backgroundColor = "rgb(199, 201, 240)";
+console.log(mainEl, newel, friend);
+
+const trail = document.getElementById("routes");
+
+const btn = document.createElement("button");
+btn.innerHTML = "Leave us a Review";
+document.body.appendChild(btn);
+
+document.addEventListener("click", myFunction1);
+document.addEventListener("click", myFunction2);
+
+function myFunction1() {
+  document.getElementById("interactivewalk").innerHTML += "It's a beautiful day for a walk. "
+}
+function myFunction2() {
+    document.getElementById("interactivewalk").innerHTML += "This could be you! "
+  }
+  

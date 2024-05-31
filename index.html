@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shop</title>
+    <title>Walking with Accessibility</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script src="app.js"></script>
+    
     <header>
       <h1>Let's take a walk together!</h1>
     </header>
@@ -15,9 +15,10 @@
     <section id="bringAfriend">
       <h2>Bring a friend or enjoy solo</h2>
       <h3>About Us</h3>
-      <p>
+      
+      <p class="p1">
         Thank you for joining us today. We are a walking route guidance app 
-        with live tracking and up to date safety warnings. Volume and accesibility is 
+        with live tracking and up to date safety warnings. Volume and accessibility is 
         always enabled and may only be disabled via voice recognition. 
         Walk, ride, glide or roll at your own pace and enjoy a worry free experience 
         as you explore your city.
@@ -25,16 +26,16 @@
 
     <section id="routes">
       <h2>Choose from these different themes: </h2>
-      <ol>
-        <li>Nature Enthusiast</li>
-        <li>Hike Master</li>
-        <li>Peace Warrior</li>
-        <li>Thrill Seeker</li>
-      </ol>
+      <div class="container">
+        <p class="one">Nature Enthusiast</p>
+        <p class="two">Hike Master</p>
+        <p class="two">Peace Warrior</p>
+        <p class="two">Thrill Seeker</p>
+        
+      </div>
     </section>
 
-    <!-- <section id="interactivewalk">
-        <video src="https://www.bing.com/images/search?view=detailV2&ccid=zx0GDjq3&id=CAA9617489B497475BF496DBD91CB4438B27FE0D&thid=OIP.zx0GDjq3ZOIFKY02tOcLAwHaFj&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f25%2f7c%2fa5%2f257ca595dd14fb0f43ee592134af200f.gif&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.cf1d060e3ab764e205298d36b4e70b03%3frik%3dDf4ni0O0HNnblg%26pid%3dImgRaw%26r%3d0&exph=600&expw=800&q=interactive+walking+route+gif&simid=608007369430283828&FORM=IRPRST&ck=B7371D250A6CF1052E04B5E82883084C&selectedIndex=50&itb=0"></video> -->
+    <section id="interactivewalk">  
     <img src="https://i.pinimg.com/originals/25/7c/a5/257ca595dd14fb0f43ee592134af200f.gif">
     </section>
 
@@ -50,5 +51,6 @@
         Email: info@walkwithme.com
       </address>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
