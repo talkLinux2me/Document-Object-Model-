@@ -8,7 +8,7 @@ const mainEl = document.querySelector("body");
 mainEl.style.fontFamily = "helvetica"; 
 mainEl.style.textAlign = "center"
 mainEl.style.backgroundColor = "rgb(199, 201, 240)";
-console.log(mainEl, newel, friend);
+
 
 const trail = document.getElementById("routes");
 
@@ -17,7 +17,6 @@ btn.innerHTML = "Leave us a Review";
 document.body.appendChild(btn);
 
 document.addEventListener("click", myFunction1);
-document.addEventListener("click", myFunction2);
 
 function myFunction1() {
     window.alert("It's a beautiful day for a walk. ")
@@ -25,4 +24,13 @@ function myFunction1() {
 function myFunction2() {
     window.alert("This could be you! ")
   }
-  
+
+
+const navItems = document.getElementsByClassName('nav-items');
+
+for(let i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener('mouseover', function(event) {
+        event.preventDefault();
+        navItems[i].style.backgroundColor = 'purple'
+    })
+}
