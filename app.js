@@ -101,7 +101,7 @@ function validateEmail() {
 
   if (atpos < 1) {
     alert(
-      "Your email must include an @ symbol which must not be at the beginning of the email."
+      "Your email must include an @ symbol."
     );
     email.focus();
     return false;
@@ -109,7 +109,7 @@ function validateEmail() {
 
   if (dotpos - atpos < 2) {
     alert(
-      "Invalid structure: @.\nYou must include a domain name after the @ symbol."
+      "Invalid structure: @.\nThere must be a domain name after the @ symbol."
     );
     email.focus();
     return false;
@@ -139,7 +139,7 @@ function validateComment() {
 
 function validateCountry() {
   if (country.value === "") {
-    alert("Please provide a country.");
+    alert("Please choose a country.");
     country.focus();
     return false;
   }
