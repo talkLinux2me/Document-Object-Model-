@@ -38,8 +38,7 @@
     <section id="interactivewalk">  
     <img id="walkingGuy" src="https://i.pinimg.com/originals/25/7c/a5/257ca595dd14fb0f43ee592134af200f.gif">
     </section>
-
-    <section id="contact">
+<section id="contact">
       <h2>Comments, Feedback, or Suggestions?</h2>
       <p>Feel free to submit any accommodation request via email or phone.
         Is there another route theme you would like to enjoy? Let us know!
@@ -51,6 +50,26 @@
         Email: info@walkwithme.com
       </address>
     </section>
+    <br>
+    <form
+    action="javascript: alert('Success!');"
+    name="myForm"
+    method="POST"
+    id="form"
+  >
+    <input type="text" name="name" placeholder="Name" />
+    <input type="text" name="email" placeholder="Email" />
+    <input type="text" name="zip" placeholder="Zip Code" />
+    <select name="country">
+      <option value="">Select Country</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="UAE">UAE</option>
+    </select>
+    <input type="text" name="comment" placeholder="Leave a comment here"/>
+    <input type="submit" value="Submit Comment"/>
+  </form>
+    
     <script src="app.js"></script>
   </body>
 </html>
